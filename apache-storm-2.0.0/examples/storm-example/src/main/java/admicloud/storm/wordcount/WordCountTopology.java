@@ -89,6 +89,7 @@ public class WordCountTopology {
       count++;
       counts.put(word, count);
       LOG.info("Count of word: " + word + " = " + count);
+      System.out.println("Count of word: " + word + " = " + count);
       collector.emit(new Values(word, count));
     }
 
